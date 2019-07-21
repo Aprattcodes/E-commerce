@@ -2,24 +2,24 @@ header {
     background-color: #f10302;
     padding-left: 10px;
     padding-top: 10px;
- }
+}
  
- .fulldisplay {
+.fulldisplay {
      display: grid;
      grid-template-columns:repeat(4,1fr);
      grid-gap: 0px;
      background-color: #000;
- }
+}
  
- .image-1 {
+.image-1 {
      grid-column: 2/3;
      -moz-column-fill: auto; /* Firefox */
      column-fill: auto;
      position: relative;
      
- }
+}
  
- .overlay-1 {
+.overlay-1 {
    position: absolute;
    top: 0;
    bottom: 0;
@@ -30,20 +30,72 @@ header {
    opacity: 0;
    transition: .5s ease;
    background-image: url("https://i.ibb.co/ZdfXy4f/hover1.png");
- }
+}
  
- .image-1:hover .overlay-1 {
+.image-1:hover .overlay-1 {
    opacity: 10;
- }
+}
  
- .image-2 {
+.image-2 {
      grid-column: 3/4;
    -moz-column-fill: auto; /* Firefox */
      column-fill: auto;
- }
- 
- .image-3 {
+     position: relative;
+}
+
+.overlay-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("https://i.ibb.co/F04Wfyh/hover2.png");
+}
+
+.image-2:hover .overlay-2 {
+  opacity: 10;
+}
+
+.image-3 {
      grid-column: 4/5;
    -moz-column-fill: auto; /* Firefox */
      column-fill: auto;
- }
+     position: relative;
+}
+
+.overlay-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("https://i.ibb.co/JkC9bNJ/hover3.png");
+}
+
+.image-3:hover .overlay-3 {
+  opacity: 10;
+}
+
+.text {
+  font-family: 'Prompt', sans-serif;
+  font-size: 32px;
+}
+
+.overlaytext {
+  font-family: 'Prompt', sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+   -webkit-transform: translate(0%, 1200%);
+  -ms-transform: translate(0%, 1200%);
+  transform: translate(0%, 1200%);
+  
+}
